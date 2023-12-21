@@ -19,6 +19,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>The7 Free HTML5 Responsive Template | Template Stock</title>
+
+	<!--Preconnect and DNS-Prefetch to improve page load time-->
+    <link rel="preconnect" href="//<client code>.tt.omtrdc.net">
+    <link rel="dns-prefetch" href="//<client code>.tt.omtrdc.net">
+    <!--/Preconnect and DNS-Prefetch-->
+    <!--Data Layer to enable rich data collection and targeting-->
+    <script>
+        var digitalData = {
+            "page": {
+                "pageInfo": {
+                    "pageName": "Home"
+                }
+            }
+        };
+    </script>
+    <!--/Data Layer-->
+    <!-- targetPageParams(), targetPageParamsAll(), Data Providers or targetGlobalSettings() functions to enrich the visitor profile or modify the library settings-->
+    <script>
+        targetPageParams = function() {
+            return {
+                "a": 1,
+                "b": 2,
+                "pageName": digitalData.page.pageInfo.pageName,
+                "profile": {
+                    "age": 26,
+                    "country": {
+                        "city": "San Francisco"
+                    }
+                }
+            };
+        };
+    </script>
+    <!--/targetPageParams()-->
+
+    <!--jQuery or other helper libraries should be implemented before at.js if you would like to use their methods in Target-->
+    <script src="jquery-3.3.1.min.js"></script>
+    <!--/jQuery-->
+    <!--Target's JavaScript SDK, at.js-->
+    <script src="at.js"></script>
+    <!--/at.js-->
         
         <!-- CSS -->
         <link rel="stylesheet" href="css/reset.css">
